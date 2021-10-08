@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="todo-header">
+                <p class="todo-header__logo">TodoList</p>
+            </div>
+            <div class="todo-content">
+                <div class="todo-menu">
+                    <a href="" class="todo-menu__item clicked" data-tab="#t1">Todo list</a>
+                    <a href="" class="todo-menu__item" data-tab="#t2">Completed</a>
+                    <a href="" class="todo-menu__item" data-tab="#t3">Deleted</a>
+                </div>
+                <div class="todo-create active">
+                    <button class="todo-create__btn"></button>
+                    <input class="todo-create__input" type="text" placeholder="Create new Todo">
+                    <button class="todo-add__btn">+</button>
+                </div>
+                <div class="todo-tabs">
+                    <div class="todo-list _tab active" id="t1"></div>
+                    <div class="todo-completed _tab" id="t2"></div>
+                    <div class="todo-deleted _tab" id="t3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
